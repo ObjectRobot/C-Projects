@@ -83,7 +83,7 @@ void decisions3(void){
     void decisions4(void) {
         // declare a variable of type float
         // initalize it using constant defined in header file
-        float num - NUM;
+        float num = NUM;
 
         // declare a variable of type bool and initialize it
         bool isNotBetween = !(num > 0.0 && num < 40000.0); // false
