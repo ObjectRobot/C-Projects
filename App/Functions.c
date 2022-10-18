@@ -13,6 +13,7 @@ there is char *. you could also have int *, or float *, or double *.
 void congratulate1(char *student, char *course, char *programmer){
     printf("%s has done as much %s programming as %s.\n",
         student, course, programmer);
+    congratulate2(student, course, programmer);
 }
 
 /* this function has 3 parameters and it also has a local variable */
@@ -26,7 +27,7 @@ void congratulate2(char *student, char *course, char *programmer){
 }
 
 /* this function has 1 parameter and it will return a value.
-it will take a celsisu temperature, convert it to 
+it will take a celsius temperature, convert it to 
 fahrenheit and return the fahrenheit temperature.*/
 float fahrenheitFromCelsius(float celsius){
     // declare a local variable and initialize it using
