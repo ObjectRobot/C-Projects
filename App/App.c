@@ -7,6 +7,7 @@
 #include "./headers/Functions.h"
 #include "./headers/Pointers.h"
 #include "./headers/PassByReference.h"
+#include "./headers/AssignmentC.h"
 
 int main(void) {
     // puts("Hello World!!!");
@@ -50,16 +51,25 @@ int main(void) {
     // pointerToNull();
     // testing Pass by Reference functionality
     // declare doubles for (x,y) point
-    double x = 3.0;
-    double y = 4.0;
+    // double x = 3.0;
+    // double y = 4.0;
 
     // declare doubles for (radiusPtr, thetaPtr)
-    double radiusPtr;
-    double thetaPtr;
+    // double radiusPtr;
+    // double thetaPtr;
 
     // call cartesianToPolar
     // must use the & to access an address of a variable
-    cartesianToPolar(x, y, &radiusPtr, &thetaPtr);
+    // cartesianToPolar(x, y, &radiusPtr, &thetaPtr);
 
-    printf("(%.2f, %.2f) equals (%.2f, %.2f)\n", x, y, radiusPtr, thetaPtr);
+    // printf("(%.2f, %.2f) equals (%.2f, %.2f)\n", x, y, radiusPtr, thetaPtr);
+    // testing Assignment C functionality
+    // declare and initalize an int variable named n
+    int n;
+    // declare and initalize an int variable named p
+    int p;
+    // call genPower providing n and p as arguments
+     printf(n + "taken to the power of " + p + genPower());
+    // call genPowerReference providing the addresses of n and p as arguments
+     printf(n + "taken to the power of " + p + genPowerReference());
 }
